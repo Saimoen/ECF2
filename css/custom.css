@@ -1,13 +1,11 @@
 /* Navbar */
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  margin: 0px 22em 5px 0px;
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+    list-style: none;
+    margin-right: 18%;
 }
-
 /* Hero */
 
 .banner {
@@ -20,30 +18,106 @@ nav ul {
   color: white;
 }
 
-#separator {
+.separator {
   height: 1px;
   width: 150px;
-  background-color: red;
+  background-color: #f74c3c;
   margin: auto;
+}
+
+/* Get Involved */
+
+#get-involved{
+  height: 560px;
 }
 
 /* Footer */
 footer {
-  background-color: red;
+  background-color: #f74c3c;
   height: 275px;
 }
 
+/* Navbar responsive */
+
+@media only screen and (max-width: 1690px) {
+nav ul {
+  width: 20%;
+}
+}
+
+/* Laptop responsive */
+
 @media only screen and (max-width: 1200px) {
-  #hero {
+  #home {
     height: 895px;
   }
-  #hero .banner {
+  #home .banner {
     height: 895px;
   }
-  #hero p .description{
+  #home p .description{
     font-size: 15px;
   }
-  #whoWeAre {
+  #who {
     height: 1100px;
+  }
+  #who p{
+    font-size: 5px;
+  }
+}
+
+/* Navbar responsive */
+
+@media only screen and (max-width: 1100px) {
+  nav ul {
+    width: 25%;
+  }
+  }
+
+/* Tablette responsive */
+
+@media only screen and (max-width: 990px) {
+  #get-involved{
+    height: 1500px;
+  }
+
+  footer {
+    position: absolute;
+    top: 162em;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+nav ul {
+  display: none;
+}
+
+#students{
+  height: 370px;
+  font-size: 15px;
+  }
+#educators{
+  height: 370px;
+  font-size: 15px;
+  }
+#sponsors{
+  height: 370px;
+  font-size: 15px;
+  }
+}
+
+/* Smartphone responsive */
+
+@media only screen and (max-width: 770px) {
+nav ul {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  nav img{
+    width: 150px;
+  }
+  footer{
+    display: none;
   }
 }
