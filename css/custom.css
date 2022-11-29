@@ -1,0 +1,49 @@
+/* Navbar */
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px 22em 5px 0px;
+}
+
+/* Hero */
+
+.banner {
+  background-image: url("/images/hero-image.jpg");
+  width: 100%;
+  height: 711px;
+}
+
+.container.text {
+  color: white;
+}
+
+#separator {
+  height: 1px;
+  width: 150px;
+  background-color: red;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background-color: red;
+  height: 275px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero {
+    height: 895px;
+  }
+  #hero .banner {
+    height: 895px;
+  }
+  #hero p .description{
+    font-size: 15px;
+  }
+  #whoWeAre {
+    height: 1100px;
+  }
+}
