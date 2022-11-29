@@ -1,3 +1,9 @@
+/* Import */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
 /* Navbar */
 nav ul{
     display: flex;
@@ -5,6 +11,7 @@ nav ul{
     width: 13%;
     list-style: none;
     margin-right: 18%;
+    padding-top: 13px;
 }
 /* Hero */
 
