@@ -1,17 +1,20 @@
 /* Import */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
+* {
+  scroll-behavior: smooth;
+}
 
 /* Navbar */
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    width: 13%;
-    list-style: none;
-    margin-right: 18%;
-    padding-top: 13px;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 13%;
+  list-style: none;
+  margin-right: 18%;
+  padding-top: 13px;
 }
 /* Hero */
 
@@ -34,7 +37,7 @@ nav ul{
 
 /* Get Involved */
 
-#get-involved{
+#get-involved {
   height: 560px;
 }
 
@@ -43,13 +46,23 @@ footer {
   background-color: #f74c3c;
   height: 275px;
 }
+footer img {
+  padding: 9em 0 0 29em;
+}
+footer span{
+  height: 100px;
+  width: 100px;
+}
 
 /* Navbar responsive */
 
 @media only screen and (max-width: 1690px) {
-nav ul {
-  width: 20%;
-}
+  nav ul {
+    width: 20%;
+  }
+  footer img {
+    padding: 9em 0 0 5em;
+  }
 }
 
 /* Laptop responsive */
@@ -61,70 +74,96 @@ nav ul {
   #home .banner {
     height: 895px;
   }
-  #home p .description{
+  #home p .description {
     font-size: 15px;
   }
   #who {
     height: 1100px;
   }
-  #who p{
+  #who p {
     font-size: 5px;
   }
+  footer img {
+    padding: 9em 0 0 10em;
+  }
 }
-
-/* Navbar responsive */
 
 @media only screen and (max-width: 1100px) {
   nav ul {
     width: 25%;
   }
-  }
+}
 
 /* Tablette responsive */
 
 @media only screen and (max-width: 990px) {
-  #get-involved{
+  #get-involved {
     height: 1500px;
   }
 
   footer {
     position: absolute;
-    top: 162em;
+    top: 165em;
     width: 100%;
     margin-top: 60px;
   }
 
-nav ul {
-  display: none;
-}
+  nav ul {
+    display: none;
+  }
 
-#students{
-  height: 370px;
-  font-size: 15px;
+  #students {
+    height: 370px;
+    font-size: 15px;
   }
-#educators{
-  height: 370px;
-  font-size: 15px;
+  #educators {
+    height: 370px;
+    font-size: 15px;
   }
-#sponsors{
-  height: 370px;
-  font-size: 15px;
+  #sponsors {
+    height: 370px;
+    font-size: 15px;
   }
 }
 
 /* Smartphone responsive */
+@media only screen and (max-width: 850px) {
+footer img{
+  padding: 10em 0 0 40px;
+}
+}
 
 @media only screen and (max-width: 770px) {
-nav ul {
-  display: none;
-}
+  nav ul {
+    display: none;
+  }
+  #who {
+    padding-bottom: 450px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  nav img{
+  nav img {
     width: 150px;
   }
-  footer{
-    display: none;
+  footer {
+    width: 100%;
   }
+  footer img {
+    position: absolute;
+    right: 50px;
+    width: 440px;
+  }
+
+}
+@media only screen and (max-width: 490px) {
+  footer {
+    width: 100%;
+  }
+  footer img {
+    position: absolute;
+    right: 30px;
+    width: 100%;
+  }
+
 }
