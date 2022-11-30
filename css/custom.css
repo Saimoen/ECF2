@@ -3,11 +3,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
+/* Paramètre généraux */
+
 * {
   scroll-behavior: smooth;
 }
 
+.separator {
+  height: 1px;
+  width: 150px;
+  background-color: #f74c3c;
+  margin: auto;
+}
+
 /* Navbar */
+
+nav img {
+  margin-left: 400px;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -16,23 +29,17 @@ nav ul {
   margin-right: 18%;
   padding-top: 13px;
 }
+
 /* Hero */
 
 .banner {
-  background-image: url("/images/hero-image.jpg");
+  background-image: url("../images/hero-image.jpg");
   width: 100%;
   height: 711px;
 }
 
 .container.text {
   color: white;
-}
-
-.separator {
-  height: 1px;
-  width: 150px;
-  background-color: #f74c3c;
-  margin: auto;
 }
 
 /* Get Involved */
@@ -49,12 +56,8 @@ footer {
 footer img {
   padding: 9em 0 0 29em;
 }
-footer span{
-  height: 100px;
-  width: 100px;
-}
 
-/* Navbar responsive */
+/* Responsive */
 
 @media only screen and (max-width: 1690px) {
   nav ul {
@@ -92,6 +95,10 @@ footer span{
   nav ul {
     width: 25%;
   }
+  nav img {
+    width: 20%;
+    margin-left: 0;
+  }
 }
 
 /* Tablette responsive */
@@ -112,6 +119,10 @@ footer span{
     display: none;
   }
 
+  nav img {
+    margin-left: 10px;
+  }
+
   #students {
     height: 370px;
     font-size: 15px;
@@ -127,6 +138,8 @@ footer span{
 }
 
 /* Smartphone responsive */
+
+
 @media only screen and (max-width: 850px) {
 footer img{
   padding: 10em 0 0 40px;
@@ -136,6 +149,9 @@ footer img{
 @media only screen and (max-width: 770px) {
   nav ul {
     display: none;
+  }
+  nav img {
+    margin-left: 10px;
   }
   #who {
     padding-bottom: 450px;
@@ -154,6 +170,9 @@ footer img{
     right: 50px;
     width: 440px;
   }
+#toTheTop{
+  margin-left: 26em;
+}
 
 }
 @media only screen and (max-width: 490px) {
@@ -162,8 +181,14 @@ footer img{
   }
   footer img {
     position: absolute;
-    right: 30px;
+    right: 32px;
     width: 100%;
-  }
+}
 
+}
+
+@media only screen and (max-width: 470px) {
+#toTheTop{
+  margin-left: 88%
+}
 }
