@@ -15,10 +15,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     >
   </head>
-  <body>
+  <body aria-hidden="true">
     <!-- Navbar -->
 
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark" id="navbar">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark" id="navbar" role="navigation">
       <div class="container-fluid">
         <img
           src="./images/top-logo.png"
@@ -34,6 +34,7 @@
           aria-controls="navbarToggleExternalContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          role="button"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,10 +54,11 @@
           </li>
         </ul>
       </div>
-
     </nav>
 
-    <div class="collapse" id="navbarToggleExternalContent">
+    <!-- Menu collapse Navbar -->
+
+    <div class="collapse" id="navbarToggleExternalContent" aria-hidden="true" role="navigation">
       <div class="bg-dark d-flex flex-row justify-content-center">
         <a class="text-decoration-none" href="#who"
         ><p class="text-white fs-5">Who We Are</p></a
@@ -70,9 +72,9 @@
 
     <!-- Hero -->
 
-    <section class="hero" id="home">
+    <section class="hero" id="home" role="main">
       <div class="banner">
-        <div class="container text text-center">
+        <div class="container text text-center" role="article">
           <h1 class="display-1" style="padding-top: 10px; font-weight: 400">
             Our goal is to inspire <br>
             Tallahassee to write 1,000,000 <br>
@@ -100,24 +102,25 @@
             class="btn mt-4 text-white fs-2"
             style="width: 245px; height: 73px; background-color: #d9534f"
             id="button"
+            role="button"
           >
             Learn More »
           </button>
         </div>
-        <div class="text-center mt-5">
-          <img class="img-fluid" src="./images/code.png" alt="Logo code with style on square" >
+        <div class="text-center mt-5" role="article">
+          <img class="img-fluid" src="./images/code.png" alt="Logo code with style on square" role="img" >
         </div>
       </div>
     </section>
 
     <!-- Who we are -->
 
-    <section id="who" class="mt-5" style="height: 400px">
+    <section id="who" class="mt-5" style="height: 400px" role="textbox">
       <div class="container text-center">
-        <img src="./images/academy-brand-med.png" alt="" >
-        <h1 class="text-uppercase" style="color: #e74c3c">Who we are</h1>
+        <img src="./images/academy-brand-med.png" alt="Logo Academy Brand medium" role="img">
+        <h1 class="text-uppercase" style="color: #e74c3c" role="text">Who we are</h1>
         <div class="mt-4 separator"></div>
-        <p class="fs-5 mt-5">
+        <p class="fs-5 mt-5" role="text">
           We are
           <span class="text-uppercase" style="color: #e74c3c"
             >massive academy</span
@@ -130,14 +133,14 @@
 
     <!-- Get Involved -->
 
-    <section class="bg-light" id="get-involved">
+    <section class="bg-light" id="get-involved" role="textbox">
       <div class="text-center">
         <h1 class="text-uppercase text-danger pt-5">Get Involved</h1>
         <div class="mt-4 separator"></div>
       </div>
       <div class="container" id="icon">
         <div class="row text-center mt-5">
-          <div class="col-lg-4 col-md-12 col-xs-12" id="students">
+          <div class="col-lg-4 col-md-12 col-xs-12" id="students" role="contentinfo">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-dark"></i>
               <i class="fa-solid fa-user fa-stack-1x fa-inverse"></i>
@@ -149,11 +152,11 @@
               the button below and we'll let you know <br >
               how to get involved.
             </p>
-            <button type="button" class="btn btn-outline-secondary text-danger">
+            <button type="button" role="button" class="btn btn-outline-secondary text-danger">
               Start Learning »
             </button>
           </div>
-          <div class="col-lg-4 col-md-12 col-xs-12" id="educators">
+          <div class="col-lg-4 col-md-12 col-xs-12" id="educators" role="contentinfo">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-dark"></i>
               <i class="fa-solid fa-pencil fa-stack-1x fa-inverse"></i>
@@ -167,11 +170,11 @@
               the button below and we'll make it <br>
               happen.
             </p>
-            <button type="button" class="btn btn-outline-secondary text-danger">
+            <button type="button" role="button" class="btn btn-outline-secondary text-danger">
               Join the Initiative »
             </button>
           </div>
-          <div class="col-lg-4 col-md-12 col-xs-12" id="sponsors">
+          <div class="col-lg-4 col-md-12 col-xs-12" id="sponsors" role="contentinfo">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-dark"></i>
               <i class="fa-regular fa-money-bill-1 fa-stack-1x fa-inverse"></i>
@@ -183,7 +186,7 @@
               lives with the knowledge of coding. <br>
               Click to get involved.
             </p>
-            <button type="button" class="btn btn-outline-secondary text-danger">
+            <button type="button" role="button" class="btn btn-outline-secondary text-danger">
               Give Support »
             </button>
           </div>
@@ -194,7 +197,7 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer id="footer" role="contentInfo">
       <div class="container-fluid">
         <img
           src="./images/one-million-bottom-brand.png"
@@ -205,7 +208,8 @@
       class="btn btn-danger circle-rounded"
       id="toTheTop"
       onclick="goTheTop()"
-      style="background-color: #f74c3c"
+      style="background-color: #f74c3c;"
+      role="button"
     >
     <i class="fa-solid fa-circle-chevron-up" onclick="goTheTop()"></i>
     </button>
