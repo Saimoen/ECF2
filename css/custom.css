@@ -156,6 +156,12 @@ footer img{
   #who {
     padding-bottom: 450px;
   }
+  #get-involved{
+    padding: 10px 0 0 10px;
+  }
+  footer{
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
