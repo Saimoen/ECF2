@@ -1,7 +1,10 @@
 function goTheTop() {
-    let top = document.getElementById('toTheTop')
+    // pointe l'élément html
+  let top = document.getElementById("toTheTop");
 
-    top.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth'})
-    })
+    //ajout d'un écouteur/événement
+  top.addEventListener("click", () => {
+    //au clique tu scroll la fenêtre
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 }

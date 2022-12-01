@@ -139,11 +139,10 @@ footer img {
 
 /* Smartphone responsive */
 
-
 @media only screen and (max-width: 850px) {
-footer img{
-  padding: 10em 0 0 40px;
-}
+  footer img {
+    padding: 10em 0 0 40px;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -156,10 +155,10 @@ footer img{
   #who {
     padding-bottom: 450px;
   }
-  #get-involved{
+  #get-involved {
     padding: 10px 0 0 10px;
   }
-  footer{
+  footer {
     margin-top: 100px;
   }
 }
@@ -176,10 +175,9 @@ footer img{
     right: 50px;
     width: 440px;
   }
-#toTheTop{
-  margin-left: 26em;
-}
-
+  #toTheTop {
+    margin-left: 26em;
+  }
 }
 @media only screen and (max-width: 490px) {
   footer {
@@ -189,17 +187,16 @@ footer img{
     position: absolute;
     right: 32px;
     width: 100%;
-}
-
+  }
 }
 
 @media only screen and (max-width: 470px) {
-#toTheTop{
-  margin-left: 87%
-}
+  #toTheTop {
+    margin-left: 87%;
+  }
 }
 @media only screen and (max-width: 280px) {
-#toTheTop{
-  margin-left: 85%
-}
+  #toTheTop {
+    margin-left: 85%;
+  }
 }
